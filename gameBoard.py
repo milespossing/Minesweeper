@@ -19,7 +19,7 @@ class GameBoard:
         output = []
         for row in self.Squares:
             for square in row:
-                if square.Opened and len(square.closedNeighbors) > 0:
+                if square.opened and len(square.closedNeighbors) > 0:
                     output.append(square)
         return output
 
